@@ -1,11 +1,9 @@
 'use strict';
-var querySelector = document.querySelector(".message").textContent;
-var getElement = document.getElementById("titre").textContent;
-console.log(`
-select an element
-----------------------------------------------------------------
-En utilisant :
-- un query selector document.querySelector(".message").textContent : ${querySelector}
--> un point pour une classe et un dièse pour un id
-- un get element by id document.getElementById("titre").textContent : ${getElement};`);
+var querySelector = document.querySelector('.message').textContent;
+var getElement = document.getElementById('titre').textContent;
 
+document.querySelector('.message').textContent = 'Correct Number 😃';
+document.querySelector('.number').textContent = 13;
+document.querySelector('.score').textContent = 20;
+
+console.log(document.querySelector('.guess').value); 
