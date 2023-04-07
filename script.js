@@ -11,7 +11,6 @@ document.querySelector('.check').addEventListener('click', function () {
   } else if (guess === secretNumber) {
     document.querySelector('.message').textContent =
       'Tu as trouvé le nombre secret 😃';
-    score += 5;
     document.querySelector('.score').textContent = score;
     secretNumber = Math.trunc(Math.random() * 20) + 1;
   } else if (guess > secretNumber) {
@@ -30,3 +29,5 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.score').textContent = score;
   }
 });
+
+
